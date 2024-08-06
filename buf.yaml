@@ -1,0 +1,10 @@
+version: v2
+modules:
+  - path: internal/example/proto
+deps:
+  - buf.build/bufbuild/pluginrpc
+  - buf.build/bufbuild/protovalidate
+lint:
+  use:
+    - DEFAULT
+    - UNARY_RPC
